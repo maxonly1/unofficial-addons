@@ -32,6 +32,7 @@ PKG_SHORTDESC="rTorrent: This is the free BitTorrent client rtorrent packed for 
 PKG_LONGDESC="rTorrent BitTorrent client can handle multiple watch dirs and post actions. [CR][CR]After changing settings you need to disable and re-enable the addon. [CR][CR]How this addon is intended to work: [CR][CR]You add base dirs. [CR]torrents: /storage/downloads/torrents/ [CR]downloads: /storage/downloads [CR]complete: /storege [CR][CR]then you add watch dirs separated by: ,[CR]videos,tvshows,music [CR][CR]What will happen then is: [CR][CR]Directories will be created if they dont exist: [CR]/storage/downloads/torrents/videos [CR]/storage/downloads/videos [CR]/storege/videos [CR][CR]then rtorrent will start detached. [CR][CR]Now if you add a torrent file to: /storage/downloads/torrents/videos it will be downloaded to /storage/downloads/videos [CR][CR]On completion it will be Linked or Moved to /storege/videos [CR][CR]The same for every watch dir added... [CR][CR]Nice ha..."
 
 PKG_IS_ADDON="yes"
+PKG_ADDON_NAME="rTorrent"
 PKG_ADDON_TYPE="xbmc.service"
 PKG_ADDON_PROVIDES=""
 PKG_ADDON_REQUIRES="tools.php:0.0.0 tools.dtach:0.0.0"
