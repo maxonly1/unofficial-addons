@@ -19,12 +19,12 @@
 ################################################################################
 
 PKG_NAME="rutorrent"
-PKG_VERSION="3.7"
+PKG_VERSION="3.6"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="http://rutorrent.googlecode.com/"
-PKG_URL="http://dl.bintray.com/novik65/generic/$PKG_NAME-$PKG_VERSION.zip"
+PKG_URL="http://dl.bintray.com/novik65/generic/$PKG_NAME-$PKG_VERSION.tar.gz"
 PKG_SOURCE_DIR="$PKG_NAME"
 PKG_DEPENDS_TARGET="toolchain"
 PKG_PRIORITY="optional"
@@ -53,7 +53,7 @@ make_target() {
   done
 
   echo "Installing rutorrent plugin: lbll-suite-0.8.1..."
-  wget -q http://rutorrent-tadd-labels.googlecode.com/files/lbll-suite_0.8.1.tar.gz
+  wget -q https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/rutorrent-tadd-labels/lbll-suite_0.8.1.tar.gz
   tar zxf lbll-suite_0.8.1.tar.gz -C plugins/
   rm -f lbll-suite_0.8.1.tar.gz
 }
