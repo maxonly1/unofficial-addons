@@ -36,7 +36,7 @@ PKG_ADDON_REPOVERSION="8.1"
 
 PKG_AUTORECONF="no"
 
-PKG_MAINTAINER="Daniel Forsberg (jenkins101)"
+
 
 PKG_DISCLAIMER="this is an unofficial addon. please don't ask for support in openelec forum / irc channel"
 
