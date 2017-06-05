@@ -35,14 +35,14 @@ PKG_AUTORECONF="yes"
 
 PKG_MAINTAINER="Daniel Forsberg (jenkins101)"
 
-PKG_CONFIGURE_OPTS_TARGET="ax_cv_header_ncurses_curses_h=yes --disable-debug \
+PKG_CONFIGURE_OPTS_TARGET="ax_cv_header_ncurses_h=yes ax_cv_ncurses=yes --disable-debug \
             --with-xmlrpc-c=$SYSROOT_PREFIX/usr/bin/xmlrpc-c-config \
             --with-gnu-ld"
 
-post_unpack() {
-  $SED "s:<ncurses/curses.h>:<ncurses/ncurses.h>:g" $PKG_BUILD/src/display/attributes.h
-}
-
 makeinstall_target() {
   : # nop
+}
+
+pre_configure_target() {
+  export LIBS="-lterminfo"
 }
