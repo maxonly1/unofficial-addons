@@ -19,12 +19,12 @@
 ################################################################################
 
 PKG_NAME="xmlrpc-c"
-PKG_VERSION="1.39.12"
+PKG_VERSION="1.39.07"
 PKG_REV="2"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="http://xmlrpc-c.sourceforge.net"
-PKG_URL="http://download.sourceforge.net/$PKG_NAME/$PKG_NAME-$PKG_VERSION.tgz"
+PKG_URL="https://sourceforge.net/projects/xmlrpc-c/files/Xmlrpc-c%20Super%20Stable/$PKG_VERSION/xmlrpc-c-$PKG_VERSION.tgz/download"
 PKG_DEPENDS_TARGET="toolchain libressl curl zlib libxml2 libsigc++"
 PKG_PRIORITY="optional"
 PKG_SHORTDESC=""
