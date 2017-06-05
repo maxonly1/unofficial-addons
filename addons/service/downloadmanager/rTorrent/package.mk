@@ -40,7 +40,6 @@ PKG_ADDON_REPOVERSION="8.1"
 
 PKG_AUTORECONF="no"
 
-PKG_MAINTAINER="Daniel Forsberg (jenkins101)"
 
 make_target() {
   : # nop
